@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="316dp"
+            android:layout_height="55dp"
+            android:text="Primeiro número:"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/no1"
+            android:layout_width="369dp"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:inputType="number"
+            android:scrollHorizontally="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="316dp"
+            android:layout_height="55dp"
+            android:text="Segundo número:"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/no2"
+            android:layout_width="369dp"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:inputType="number"
+            android:scrollHorizontally="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="316dp"
+            android:layout_height="55dp"
+            android:text="Resultado:"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/resultField"
+            android:layout_width="316dp"
+            android:layout_height="55dp"
+            android:text="-"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/bSum"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:onClick="sumNo"
+            android:text="Soma" />
+
+        <Button
+            android:id="@+id/bSub"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:onClick="subNo"
+            android:text="Subtração" />
+
+        <Button
+            android:id="@+id/bMult"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:onClick="multNo"
+            android:text="Multiplicação" />
+
+        <Button
+            android:id="@+id/bDiv"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:onClick="divNo"
+            android:text="Divisão" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
